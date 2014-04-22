@@ -1,0 +1,31 @@
+BUGS:
+  IE:
+    - brand shifts slightly on mouseover
+    - responsive layout does not work
+      - should work in IE9 but previous versions of IE are incompatible with responsive Bootstrap
+    - columns on "About Us" page do not work
+      - known issue: IE is incompatible with CSS 'column-count' attribute
+    - Bootstrap is incompatible with IE6
+      - current fix: error box appears, requesting that users upgrade to a newer version of IE
+  Safari:
+    - columns on "About Us" page carry over margins strangely
+      - known issue: Safari does not handle CSS 'column-count' attribute correctly
+  Opera:
+    - on drop-down menus, the top link is only partially highlighted on mouseover (should be fully highlighted)
+      - the break in highlighting occurs where the navbar is separated from the rest of the page
+        - might be related to the CSS positioning ('relative', 'absolute', 'z-index', etc.)
+  Non-browser-specific:
+    - FlexSlider causes whitespace to appear on right side of page when mouse is not over the slider
+      - current fix: CSS 'body { overflow: hidden; }' disables it from being visible
+        - side-effect: disables horizontal scrollbar (this shouldn't matter except that IE isn't resizing itself so the page cannot be viewed in smaller windows)
+
+TO DO:
+  - Centre dropdown menus
+  - Replace current text with correct text
+    - banner
+    - home page content
+  - Replace images with better versions
+    - all current images are low-quality, badly cropped copies from the .psd
+  - Create other content pages
+  - Link pages together (all links currently go nowhere)
+  - Check that mobile version of the site works

@@ -1,0 +1,2 @@
+class OptemoController < ApplicationController
+end

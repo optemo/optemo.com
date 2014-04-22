@@ -1,0 +1,129 @@
+<div id="banner">
+  <div class="slider">
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <div class="container">
+            <div class="row">
+              <div class="span7">
+                <ul class="thumbnails">
+                  <li class="span7">
+                    <div class="thumbnail">
+                      <%= image_tag 'slider1.png' %>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="span5">
+                <h1>Multiple Devices, &nbsp; &nbsp; &nbsp; &nbsp; Single API</h1>
+                <p>Empowering retailers with device-specific search and navigation while keeping integration and configuration easy</p>
+                <%= link_to action: 'search' do %><button class="btn">LEARN MORE</button><% end %>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="container">
+            <div class="row">
+              <div class="span7">
+                <ul class="thumbnails">
+                  <li class="span7">
+                    <div class="thumbnail">
+                      <%= image_tag 'slider2.png' %>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="span5">
+                <h1>Efficient, Specific Navigation</h1>
+                <p>Providing dynamic and configurable search technology for enhanced navigation of large and varied product catalogues</p>
+                <%= link_to action: 'faceted' do %><button class="btn">LEARN MORE</button><% end %>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="container">
+            <div class="row">
+              <div class="span7">
+                <ul class="thumbnails">
+                  <li class="span7">
+                    <div class="thumbnail">
+                      <%= image_tag 'slider3.png' %>
+                    </div>
+                  </li>
+                </ul>
+              </div>	
+		<div class="span5">
+			<h1>Always learning, &nbsp; &nbsp; &nbsp; &nbsp; Always improving</h1>
+			<p>Continually learns from online, mobile, and in-store purchasing behaviours for an optimized customer experience</p>
+			<%= link_to action: 'adaptation' do %><button class="btn">LEARN MORE</button><% end %>
+		</div>  
+	</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="content">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="span8">
+          <h3>What is Optemo?</h3>
+          <p><em>Optemo</em> is a leader in providing adaptive search and navigation technologies for omni-channel retailers. Optemo's patent-pending adaptive engine continually and automatically learns from retailers' big data to optimize and adapt ecommerce search and browsing experiences. The cloud-based API empowers multiple platforms and devices. Optemo's one-of-a-kind Merchant Resource Center fully integrates with retailers' existing analytics solutions. The MRC allows merchandisers to preview the automated processes and configure all aspects of search, navigation and recommendations in one place.</p> 
+
+          <%= link_to action: 'search' do %><button class="btn optemo-btn">LEARN MORE</button><% end %>
+        </div>
+        <div class="span4">
+          <ul class="thumbnails">
+            <li class="span4">
+              <div class="thumbnail devices">
+                <img src="img/device-shadows.png">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12 divider"></div>
+      </div>
+      <div class="row">
+        <div class="span8">
+          <div id="customers">
+            <div class="hero-unit">
+              <h3>Optemo Success Story</h3>
+              <p>Optemo's products have been used by millions of customers of Best Buy, the major multi-channel retailer. Optemo's technology has provided an excellent return on investment for Best Buy, in some departments increasing generated revenue by more than 50% compared with Best Buy's previous search solution.</p>
+            </div>
+          </div>
+        </div>
+        <div class="span4">
+          <div id="featured-stories">
+            <div class="hero-unit">
+              <h3>Featured stories</h3>
+			<%= render partial: "newsblurb", locals: {
+				text: "Optemo has been recognized as an emerging rocket: having a great potential for breakthroughs in 2013.",
+				url: "http://www.readytorocket.com/2013/03/2013-ict-emerging-rockets.html",
+				img_tag: image_tag("apollo-11-launch_sm_bwcropped.jpg")
+				} %>
+				<div class="row">
+					<div class="span-full divider"></div>
+				</div>
+				<%= render partial: "newsblurb", locals: {
+					text: "Optemo is holding a workshop at the 2013 National Business and Technology Conference in Toronto",
+					url: "http://nbtc2013.nspire.org/workshops",
+					img_tag: image_tag("nbtc13.png")
+					} %>
+            </div>
+            <div id="more-stories">
+              <div class="hero-unit">
+                <%= link_to action: 'news' do %><button class="btn">MORE STORIES</button><% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

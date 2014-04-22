@@ -1,0 +1,11 @@
+#!/bin/zsh
+mkdir /optemo/optemocom_flat
+cd /optemo/optemocom_flat
+rm -rf /optemo/optemocom_flat/*
+wget -r --adjust-extension http://localhost:3000/
+mv localhost:3000/* .
+rm -rf localhost:3000
+autoload zmv
+
+#find /apps/janulrich -type f|grep -v "guatemala/jan/images\|guatemala/courtney/images\|.git\|CNAME"|xargs rm -rf
+#cp -r /apps/ju/* /apps/janulrich/

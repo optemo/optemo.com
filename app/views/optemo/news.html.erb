@@ -1,0 +1,55 @@
+<div id="content">
+  <div class="container-fluid">
+    <div class="container">
+      <h2>News &amp; Events</h2>
+      <div class="span12">
+        <div id="featured-stories">
+          <div class= "two columns">
+			<%= render partial: "newsblurb", locals: {
+				text: "Optemo has been recognized as an emerging rocket: having a great potential for breakthroughs in 2013.",
+				url: "http://www.readytorocket.com/2013/03/2013-ict-emerging-rockets.html",
+				img_tag: image_tag("apollo-11-launch_sm_bwcropped.jpg")
+				} %>
+			<div class="row">
+				<div class="span-full divider"></div>
+			</div>
+			<%= render partial: "newsblurb", locals: {
+				text: "Optemo is holding a workshop at the 2013 National Business and Technology Conference in Toronto",
+				url: "http://nbtc2013.nspire.org/workshops",
+				img_tag: image_tag("nbtc13.png")
+			} %>
+			<div class="row">
+				<div class="span-full divider"></div>
+			</div>
+			<%= render partial: "newsblurb", locals: {
+				text: "Optemo is attending the shop.org annual summit in Denver, Colorado Sept 10-12, 2012.",
+				url: "shoporg",
+				img_tag: image_tag("shop.org.jpg")
+			} %>
+            <div class="row">
+              <div class="span-full divider"></div>
+            </div>
+            <%= render partial: "newsblurb", locals: {
+              text: "Optemo was selected among the top UBC startups.",
+              url: "http://www.techvibes.com/blog/ubc-entrepreneurs-offered-chance-to-pitch-business-ideas-directly-to-silicon-valley-vcs",
+              img_tag: image_tag("techvibes-logo.png")
+            } %>
+            <%= render partial: "newsblurb", locals: {
+              text: "Optemo gave a talk at CONNECT conference on October 12, 2010. Techvibes interviewed Jan, Optemo's co-founder, for the occasion.",
+              url: "http://www.techvibes.com/blog/techvibes-connects-with-optemos-jan-ulrich",
+              img_tag: image_tag("connectnext.jpg")
+            } %>
+            <div class="row">
+              <div class="span-full divider"></div>
+            </div>
+            <%= render partial: "newsblurb", locals: {
+              text: "Georgia Straight, Vancouver's weekly, recently had an interview with Maryam, Optemo's co-founder, about the company and the Discovery platform.",
+              url: "http://www.straight.com/article-272682/vancouver/maryam-mahdaviani-optemo-technologies",
+              img_tag: image_tag("georgiastraightlogo.gif")
+            } %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
