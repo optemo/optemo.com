@@ -1,12 +1,14 @@
 #!/bin/zsh
-git checkout gh-pages
-mkdir /optemo/optemocom_flat
+mkdir -p /optemo/optemocom_flat
 cd /optemo/optemocom_flat
 rm -rf /optemo/optemocom_flat/*
-wget -r --adjust-extension http://localhost:3000/
+wget -r http://localhost:3000/
 mv localhost:3000/* .
 rm -rf localhost:3000
 autoload zmv
+cd /optemo/optemocom
+git checkout gh-pages
+cd /optemo/optemocom_flat
 
 find /optemo/optemocom -type f|grep -v ".git\|CNAME"|xargs rm -rf
 cp -r /optemo/optemocom_flat/* /optemo/optemocom/
