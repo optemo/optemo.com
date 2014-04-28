@@ -11,4 +11,6 @@ git checkout gh-pages
 cd /optemo/optemocom_flat
 
 find /optemo/optemocom -type f|grep -v ".git\|CNAME"|xargs rm -rf
+chars='[][?=+]'
+zmv 'assets/(*)?body=1' 'assets/$1'
 cp -r /optemo/optemocom_flat/* /optemo/optemocom/
