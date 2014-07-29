@@ -22,16 +22,7 @@
     <div class="container-fluid">
       <div class="container">
         <div class="row pull-right">
-          <div class="span2">
-            <div class="text blend phone"><i class="icon-user icon-white icon"></i> 604.639.0778</div>
-          </div>
-          <div class="span 2">
-            <div class="text blend email"><script type="text/javascript">document.write(
-"<n uers=\"znvygb:fnyrf\100bcgrzb\056pbz\">".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
-</script><i class="icon-envelope icon-white icon"></i> <script type="text/javascript">document.write(
-"fnyrf\100bcgrzb\056pbz".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
-</script></a></div>
-          </div>
+          <div style="height:30px"></div>
         </div>
       </div>
     </div>
@@ -56,10 +47,6 @@
                 <li><%= link_to action: "api" do %><p class="navbar-text">Search API</p><% end %></li>
               </ul>
             </li>
-            <li class="dropdown<%= active_check("support") %>"><%= link_to "Support & Services", {action: 'support'}, {class: "dropdown-toggle"} %>
-              <ul class="navbar-text">
-              </ul>
-            </li>
             <li class="dropdown<%= active_check("company") %>"><div class="dropdown-toggle" data-toggle="dropdown">Company</div>
               <ul class="dropdown-menu">
                 <li><%= link_to action: "about" do %><p class="navbar-text">About Us</p><% end %></li>
@@ -81,6 +68,7 @@
     <div class="container-fluid">
       <div class="container">
         <div class="row">
+          <div class="span2">&nbsp;</div>
           <div class="span3">
             <h5>PRODUCTS</h5>
             <p><%= link_to "Keyword Search", action: "search" %></p>
@@ -92,22 +80,12 @@
             <h5>TECHNOLOGY</h5>
             <p><%= link_to "Adaptation Engine", action: 'adaptation' %></p>
             <p><%= link_to "Search API", action: 'api' %></p>
-            <h5>SUPPORT &amp; SERVICES</h5>
-            <p><%= link_to "24/7 Support", action: 'support' %></p>
           </div>
           <div class="span3">
             <h5>COMPANY</h5>
             <p><%= link_to "About Us", action: 'about' %></p>
             <p><%= link_to "Careers", action: 'careers' %></p>
             <p><%= link_to "News & Events", action: 'news' %></p>
-			<p><%= link_to "http://twitter.com/optemo" do %><i class="icon-comment icon-white blend"></i> Follow us on Twitter<% end %></p>
-			<p><%= link_to "http://www.linkedin.com/company/optemo-technologies" do %><i class="icon-ok-sign icon-white blend"></i> Connect with with us on LinkedIn<% end %></p>
-          </div>
-          <div class="span3">
-            <h5>CONTACT</h5>
-            <p class="extra-top-spacing"><i class="icon-user icon-white blend"></i> 604-639-0778</p>
-            <a href="mailto:sales@optemo.com"><p><i class="icon-envelope icon-white blend"></i> sales@optemo.com</a></p>
-           
           </div>
         </div>
       </div>
